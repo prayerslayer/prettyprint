@@ -1,6 +1,6 @@
 # prettyprint
 
-[![Build status](https://travis-ci.org/prayerslayer/prettyprint.svg?branch=master)]
+[![Build status](https://travis-ci.org/prayerslayer/prettyprint.svg?branch=master)](https://travis-ci.org/prayerslayer/prettyprint)
 [![Coverage Status](https://coveralls.io/repos/github/prayerslayer/prettyprint/badge.svg?branch=master)](https://coveralls.io/github/prayerslayer/prettyprint?branch=master)
 
 JSON.stringify with support for non-JSON values (like Symbols)

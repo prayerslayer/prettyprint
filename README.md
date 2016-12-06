@@ -6,6 +6,10 @@
 
 JSON.stringify with support for non-JSON values (like Symbols)
 
+# Status
+
+Written for fun and no profit, so don't use it if your life depends on it. There are better alternative, like [pretty-format](https://github.com/thejameskyle/pretty-format).
+
 # Installation
 
     npm install @prayerslayer/prettyprint

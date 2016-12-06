@@ -1,11 +1,11 @@
 {
-  "name": "prettyprint",
+  "name": "@prayerslayer/prettyprint",
   "version": "1.0.0",
   "description": "JS value => pretty printed string",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --recursive test",
-    "test:watch": "mocha --recursive --reporter=min --watch test",
+    "test": "mocha",
+    "test:watch": "mocha --reporter=min --watch test",
     "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec",
     "coveralls": "npm run coverage && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
   },

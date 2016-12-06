@@ -9,6 +9,9 @@
     "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec",
     "coveralls": "npm run coverage && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
   },
+  "engines": {
+    "node": ">=6"
+  },
   "keywords": [
     "pretty",
     "print"

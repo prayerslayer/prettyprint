@@ -1,4 +1,4 @@
-const expect = require('chai').expect
+const {expect} = require('chai')
 const pp = require('../')
 
 describe("prettyprint", () => {

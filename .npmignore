@@ -1,0 +1,9 @@
+.git
+node_modules
+test
+.gitignore
+LICENSE
+README.md
+yarn.lock
+.travis.yaml
+coverage

@@ -9,16 +9,16 @@ function repeat(string, n) {
   return result
 }
 
-function getOpts(opts = {}) {
-  const {level = 0, indentation = 2} = opts
+function getOpts(opts) {
+  opts = opts || {}
   return {
-    level,
-    indentation
+    level: opts.level || 0,
+    indentation: opts.indentation || 2
   }
 }
 
-function pad(string, numWhitespace = 0) {
-  return repeat(" ", numWhitespace) + string
+function pad(string, numWhitespace) {
+  return repeat(" ", numWhitespace || 0) + string
 }
 
 function prettyString(value) {
@@ -44,7 +44,9 @@ function prettyNull(value) {
 }
 
 function prettyArray(value, opts) {
-  const {level, indentation} = getOpts(opts)
+  opts = getOpts(opts)
+  const level = opts.level
+  const indentation = opts.indentation
   let result = "[\n"
   for (let i = 0; i < value.length; i++) {
     result += pad(prettyPrint(value[i], {
@@ -58,7 +60,9 @@ function prettyArray(value, opts) {
 }
 
 function prettyObject(value, opts) {
-  const {level, indentation} = getOpts(opts)
+  opts = getOpts(opts)
+  const level = opts.level
+  const indentation = opts.indentation
   let result = "{\n"
   for (key of Object.keys(value)) {
     result += pad(prettyPrint(key), level * indentation)
